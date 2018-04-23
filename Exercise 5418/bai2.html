@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="Lớn" onclick="increaseFontSize()">
+	<input type="button" value="Nhỏ" onclick="decreaseFontSize()">
+	<input type="button" value="Mặc định" onclick="defaultFontSize()">
+	<p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, dolor!</p>
+	<script> 
+	    function increaseFontSize() {
+	    txt = document.getElementById('a');
+	    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+	    currentSize = parseFloat(style);
+	    txt.style.fontSize = (currentSize + 0.4) + 'px';
+	}
+	function decreaseFontSize() {
+	    txt = document.getElementById('a');
+	    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+	    currentSize = parseFloat(style);
+	    txt.style.fontSize = (currentSize - 0.4) + 'px';
+	}
+	function defaultFontSize() {
+	    txt = document.getElementById('a');
+	    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+	    currentSize = parseFloat(style);
+	    txt.style.fontSize = "16px";
+	}
+	</script>
+</body>
+</html>

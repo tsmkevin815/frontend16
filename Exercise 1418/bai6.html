@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var n = prompt("nhap n :");
+		var S =0;
+		function factorialize(num){
+			var sum = 1;
+			var i = 1;
+			while(i <= num) {
+			   sum *= i;
+			   i++;
+			}
+			   return sum;
+		}
+		if(n>0){
+			for(var i = 1; i <= n; i++ ){
+				S+=(1/factorialize(i))
+			}
+			console.log(S)
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.tab {
+		    overflow: hidden;
+		    border: 1px solid #ccc;
+		    background-color: #f1f1f1;
+		}
+		.tab button {
+		    background-color: inherit;
+		    float: left;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    padding: 14px 16px;
+		    transition: 0.3s;
+		}
+		.tab button:hover {
+		    background-color: #ddd;
+		}
+		.tab button.active {
+		    background-color: #ccc;
+		}
+		.tabcontent {
+		    display: none;
+		    padding: 6px 12px;
+		    border: 1px solid #ccc;
+		    border-top: none;
+		}
+		.tabcontent {
+    		animation: fadeEffect 1s;
+		}
+		@keyframes fadeEffect {
+    		from {opacity: 0;}
+    		to {opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'Tab 1')" id="defaultOpen">Tab 1</button>
+	  <button class="tablinks" onclick="openCity(event, 'Tab 2')">Tab 2</button>
+	  <button class="tablinks" onclick="openCity(event, 'Tab 3')">Tab 3</button>
+	</div>
+	<div id="Tab 1" class="tabcontent">
+	  <h3>Section 1</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sint odio, distinctio itaque quas corporis.</p>
+	</div>
+	<div id="Tab 2" class="tabcontent">
+	  <h3>Section 2</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nemo!</p> 
+	</div>
+	<div id="Tab 3" class="tabcontent">
+	  <h3>Section 3</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum, vero reiciendis. Animi odit aliquid rerum omnis.</p>
+	</div>
+	<script type="text/javascript">
+		function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+	document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>

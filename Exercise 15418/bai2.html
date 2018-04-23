@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+        width: 40%;
+        margin: 1.5em auto;
+        font-family: Arial;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+      }
+    .inner {
+            padding-left: 1em;
+            overflow: hidden;
+            display: none;
+        }
+      
+    li {
+        margin: .5em 0;
+      }
+        a.toggle {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.15em;
+            transition: background .3s ease;
+            text-decoration: none;
+          }
+          
+            a.toggle:hover {
+                background: rgba(0, 0, 0, 0.9);
+            }
+  </style>
+</head>
+<body>
+<ul class="accordion">
+  <li>
+    <a class="toggle" href="javascript:void(0);">Accordion 1</a>
+    <ul class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quidem, culpa. Esse soluta corrupti eaque ea voluptas id dolores eos!</p>
+    </ul>
+  </li>
+  
+  <li>
+    <a class="toggle" href="javascript:void(0);">Accordion 2</a>
+    <ul class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quidem, culpa. Esse soluta corrupti eaque ea voluptas id dolores eos!</p>
+    </ul>
+  </li>
+  
+  <li>
+    <a class="toggle" href="javascript:void(0);">Accordion 3</a>
+    <ul class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quidem, culpa. Esse soluta corrupti eaque ea voluptas id dolores eos!</p>
+    </ul>
+  </li>
+  
+  <li>
+    <a class="toggle" href="javascript:void(0);">Accordion 4</a>
+    <ul class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quidem, culpa. Esse soluta corrupti eaque ea voluptas id dolores eos!</p>
+    </ul>
+  </li>
+</ul>
+  <script type="text/javascript" src="../Jquery 9418/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('.toggle').click(function(e) {
+    e.preventDefault();
+
+    var $this = $(this);
+
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+    });
+  </script>
+</body>
+</html>

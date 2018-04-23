@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <style type="text/css">
+		input {
+			outline: 0;
+		}
+		input:focus {
+			box-shadow: 1px 1px 1px blue;
+			transition: 0.3 ease-in-out;
+			border: 1px solid #ddd;
+		}
+	</style> -->
+</head>
+<body>
+	<input type="text" id="input">
+	<button onclick="clickme()">Add</button>
+	<div id="content">
+		
+	</div>
+	<script type="text/javascript">
+		var i = 1;
+		function clickme() {
+			var a = document.getElementById('input');
+			var b = document.getElementById('content');
+			b.innerHTML = '<p id="p' + i +'">' + a.value + '<button onclick="del('+ i +')"> Xóa </button> </p>' + b.innerHTML;
+			a.value='';
+			i++;
+		} // get ID, show content after clicking Add and arrange results fromt newest to oldest
+		function del(i) {
+			document.getElementById('p'+i).remove();	
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			background: #fff url(https://i.imgur.com/spaW1lp.jpg);
+			font-family: Arial;
+			font-size: 12px;
+			background-size: cover;
+		}
+		#wrapper {
+			width: 800px;
+			height: auto;
+			margin: 0 auto;
+			background: #fff;
+			padding: 5px;
+		}
+		#header {
+			height: 400px;
+		}
+		#header .head_img {
+			background-image: url(https://i.imgur.com/nk25L6p.jpg);
+			height: 350px;
+			width: 100%;
+		}
+		.topmenu {
+			background: #444;
+			height: 35px;
+			border-bottom: 2px solid orange;
+		}
+		.topmenu ul {
+			margin: 0;
+			padding: 0;
+		}
+		.topmenu li {
+			list-style-type: none;
+			display: inline-block;
+			padding: 0 10px;
+			line-height: 35px;
+			border-right: 1px solid #353535;
+		}
+		.topmenu li a {
+			color: orange;
+			text-transform: capitalize;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		.topmenu li a:hover {
+			color: #fff;
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+		}
+		#container {
+			width: 100%;
+			margin: 5px 0;
+		}
+		.leftside {
+			width: 18.5%;
+			float: left;
+		}
+		.main {
+			width: 61%;
+			float: left;
+			margin: 0 8px;
+		}
+		.rightside {
+			width: 18.5%;
+			float: right;
+		}
+		.leftsidex, .rightsidex {
+			background: #fff;
+			margin-bottom: 20px;
+			border: 1px solid #444;
+		}
+		.sidetitle {
+			background-image: url(https://i.imgur.com/cd4pJh0.gif);
+			text-transform: capitalize;
+			font-weight: bold;
+			color: #fff;
+			padding: 6px 0;
+			text-align: center;
+		}
+		.sidemenu ul {
+			margin: 0;
+			padding: 0;
+		}
+		.sidemenu li {
+			list-style-type: none;
+			padding: 6px;
+		}
+		.sidemenu li a {
+			color: #444;
+			text-decoration: none;
+		}
+		.sidemenu li a:hover {
+			color: orange;
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+		}
+		.clear_both {
+			clear: both;
+		}
+		.introdution p {
+			background: orange;
+    		border-radius: 10px;
+    		padding: 7px 15px;
+    		color: #fff;
+    		font-style: italic;
+    		margin: 0 5px;
+    		line-height: 1.5em;
+		}
+		.label {
+			display: inline-block;
+		}
+		.xtitle {
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 10px 5px;
+			padding: 6px;
+		}
+		.xtitle.left_title {
+			background-image: url(https://i.imgur.com/vOe1tgz.gif);
+			text-align: left;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.xtitle.right_title {
+			background-image: url(https://i.imgur.com/gdw9OiG.gif);
+			text-align: right;
+			margin-left: 0;
+    		margin-right: 0;
+    		background-position-x: 8px;
+		}
+		.contain a {
+			color: orange;
+			text-decoration: none;
+			text-transform: capitalize;
+			display: block;
+			margin-bottom: 5px;
+		}
+		a.left {
+			text-align: left;
+		}
+		a.right {
+			text-align: right;
+		}
+		.contain a:hover {
+			color: #000;
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+		}
+		.left_image {
+			float: left;
+			margin-right: 7px;
+		}
+		.right_image {
+			float: right;
+			margin-left: 7px;
+		}
+		.info a {
+			display: inline-block;
+		}
+		#footer {
+			background: #444;
+			border-top: 2px solid orange;
+			text-align: center;
+			color: #fff;
+			padding: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="head_img"></div>
+			<div class="topmenu">
+				<ul>
+					<li><a href=""><i class="fa fa-home"></i>trang chủ</a></li>
+					<li><a href="">giới thiệu</a></li>
+					<li><a href="">tin tức</a></li>
+					<li><a href="">liên hệ</a></li>
+					<li><a href="">diễn đàn</a></li>
+				</ul>
+			</div>
+			<div style="border: 2px solid #444; margin: 8px 0;"></div>
+		</div>
+		<div id="container">
+			<div class="leftside">
+				<div class="leftsidex">
+					<div class="sidetitle">danh mục chính</div>
+					<div class="sidemenu">
+						<ul>
+							<li><a href="">Gia công phần mềm</a></li>
+							<li><a href="">Đào tạo lập trình viên</a></li>
+							<li><a href="">Tư vấn doanh nghiệp</a></li>
+							<li><a href="">Ảnh viện áo cưới</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="leftsidex">
+					<div class="sidetitle">bài viết đáng chú ý</div>
+					<div class="sidemenu">
+						<ul>
+							<li><a href="">Hướng dẫn đăng kí học</a></li>
+							<li><a href="">Hình thức học tập online</a></li>
+							<li><a href="">Cài đặt sử dụng skype</a></li>
+							<li><a href="">Cài đặt sử dụng teamviewer</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="leftsidex" style="border: none;">
+					<img src="https://i.imgur.com/hCx9gIb.gif">
+				</div>
+				<div class="leftsidex" style="border: none;">
+					<img src="https://i.imgur.com/zQVPWE5.gif">
+				</div>
+			</div>
+			<div class="main">
+				<div class="introdution">
+					<p>ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hi vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc nhất phù hợp với công việc.</p>
+				</div>
+				<div class="label cntt">
+					<div class="xtitle left_title">CNTT</div>
+					<div class="contain">
+						<a class="left" href="">Gia công phần mềm</a>
+						<div class="left_image">
+							<img src="https://i.imgur.com/0CMKuBO.gif">
+						</div>
+						<div class="info">
+							ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hi vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc nhất phù hợp với công việc... <a href="">chi tiết</a>
+						</div>
+					</div>
+				</div>
+				<div class="label giaoduc">
+					<div class="xtitle right_title">giáo dục</div>
+					<div class="contain">
+						<a class="right" href="">Đào tạo lập trình viên</a>
+						<div class="right_image">
+							<img src="https://i.imgur.com/FOzy5UX.jpg" width="155px" height="108px">
+						</div>
+						<div class="info">
+							ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hi vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc nhất phù hợp với công việc... <a href="">chi tiết</a>
+						</div>
+					</div>
+				</div>
+				<div class="label thuongmai">
+					<div class="xtitle left_title">thương mại</div>
+					<div class="contain">
+						<a class="left" href="">Tư vấn doanh nghiệp</a>
+						<div class="left_image">
+							<img src="https://i.imgur.com/JM8WnBB.gif" width="155px" height="108px">
+						</div>
+						<div class="info">
+							ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hi vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc nhất phù hợp với công việc... <a href="">chi tiết</a>
+						</div>
+					</div>
+				</div>
+				<div class="label dichvu">
+					<div class="xtitle right_title">dịch vụ</div>
+					<div class="contain">
+						<a class="right" href="">Ảnh viện áo cưới</a>
+						<div class="right_image">
+							<img src="https://i.imgur.com/5T18MDA.gif" width="155px" height="108px">
+						</div>
+						<div class="info">
+							ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hi vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc nhất phù hợp với công việc... <a href="">chi tiết</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightside">
+				<div class="rightsidex">
+					<div class="sidetitle">tư vấn trực tiếp</div>
+					<div class="sidemenu">
+						<ul>
+							<li><a href=""><img src="https://i.imgur.com/xNzAGDU.gif"></a></li>
+							<li><a href=""><img src="https://i.imgur.com/3uAFyMW.gif"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightsidex">
+					<div class="sidetitle">các bài viết mới</div>
+					<div class="sidemenu">
+						<ul>
+							<li><a href="">Htaccess trong php</a></li>
+							<li><a href="">Html 5 &amp; SEO</a></li>
+							<li><a href="">Viết trang login &amp; logout cho hệ thống</a></li>
+							<li><a href="">CSS nâng cao</a></li>
+							<li><a href="">Làm mịn da mặt với photoshop cs3</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightsidex" style="border: none;">
+					<img src="https://i.imgur.com/EbcCUGw.gif">
+				</div>
+				<div class="rightsidex" style="border: none;">
+					<img src="https://i.imgur.com/WyvSTAz.gif">
+				</div>
+				<div class="rightsidex" style="border: none;">
+					<img src="https://i.imgur.com/OvtHX2m.gif">
+				</div>
+			</div>
+			<div class="clear_both"/>
+		</div>
+		<div id="footer">
+			Bản Quyền Thuộc Về ZENTGROUP - ACADEMY
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="post">
+		<input type="text" id="email" onkeyup="checkmail(this)" required>
+		<p id="emailError"></p>
+		<input type="password" id="password" onkeyup="checkpass(this)" required>
+		<p id="passwordError"></p>
+		<input type="reset" id="reset" value="Reset">
+		<button id="sb" type="submit" disabled>Submit</button>
+	</form>
+	<script type="text/javascript">
+		var flag = false;
+		var flag1 = false;
+		function enable (a, b) {
+			if (a && b) {
+				document.getElementById('sb').disabled = false;
+			} else {
+				document.getElementById('sb').disabled = true;
+			}
+		}
+		function validateEmail(email) {
+    		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    		return re.test(String(email).toLowerCase());
+		}
+		function checkmail(a) {
+			var email = a.value;
+			if (validateEmail(email)) {
+				document.getElementById('emailError').innerHTML = '';
+				flag = true;
+			}
+			else {
+				document.getElementById('emailError').innerHTML = 'Wrong Email!';
+				flag = false;
+			}
+			enable(flag, flag1);
+		}
+		function checkpass(a) {
+			/*var a  = document.getElementById('password');*/
+			if (a.value.length < 6) {
+				document.getElementById('passwordError').innerHTML = 'Mật khẩu ít nhất 6 kí tự nhé mày. Đm!';
+				flag1 = false;
+			} else {
+				document.getElementById('passwordError').innerHTML = 'Pass ổn hơn rồi đấy cu.';
+				flag1 = true;
+			}
+			enable(flag, flag1);
+		}
+	</script>
+</body>
+</html>

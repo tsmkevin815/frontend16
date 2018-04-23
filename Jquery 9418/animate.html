@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			position: absolute;
+		}
+		button {
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+	<button>Start Now!</button>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('button').click(function() {
+				$('div').animate({
+					left: '200',
+					backgroundColor: 'red',
+				}, 1000, function() {
+					$('div').slideToggle(2000);
+				})
+			}) 
+		})		
+	</script>
+</body>
+</html>

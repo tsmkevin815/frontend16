@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			background: #fff;
+			font-family: Arial;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		#wrapper {
+			margin: 0;
+			padding: 0;
+		}
+		#header {
+			margin: 0 auto;
+    		background: #DF0101;
+    		display: -webkit-box;
+    		height: 45px;
+		}
+		.logo {
+			background: #DF0101;
+    		width: 800px;
+        	margin: 0 auto;
+    		line-height: 0;
+		}
+		.logo p {
+			color: #fff;
+			font-weight: bold;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+		#top {
+			background: #B40404;
+			height: 30px;
+		}
+		.top_menu {
+			width: 800px;
+			margin: 0 auto;
+			line-height: 30px;
+		}
+		.top_menu>li {
+			display: inline-block;
+		}
+		.top_menu>li>a {
+			text-decoration: none;
+			color: #fff;
+			font-size: 12px;
+			padding: 0 7px;
+			border-right: 1px solid rgba(255,255,255,.3);
+		}
+		.top_menu>li>a:first-child {
+			padding-left: 0;
+		}
+		#ads {
+			height: 100px;
+    		background: #eee;
+		}
+		.qc {
+			width: 800px;
+			margin: 0 auto;
+			padding: 4px;
+			padding-left: 85px;
+		}
+		#container {
+			width: 800px;
+			margin: 0 auto;
+		}
+		.main {
+			width: 60%;
+			float: left;
+			margin-right: 15px; 
+		}
+		.sidebar {
+			width: 38%;
+			float: right;
+		}
+		.first_post h2 {
+			font-size: 23px;
+		}
+		.text {
+			display: inline-block;
+		}
+		.detail_1 {
+			font-size: 12px;
+			float: left;
+			width: 172px;
+			margin-right: 8px;
+		}
+		.detail_1 p {
+			margin: 0;
+			text-align: justify;
+		}
+		.thumbnail_1 {
+			float: right;
+		}
+		.thumbnail_1 img {
+			width: 100%;
+			height: 190px;
+		}
+		.info {
+			margin: 6px 0;
+			position: relative;
+			font-size: 12px;
+		}
+		.info:after {
+			content: "";
+			background: #B40404;
+			height: 1px;
+			width: 37px;
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+		}
+		.time {
+			border-right: 1px solid rgba(0,0,0,.4);
+			padding-right: 5px;
+		}
+		span.time:before {
+			content: "\f017";
+			font-family: fontawesome;
+			padding-right: 6px;
+		}
+		.label {
+			padding-left: 5px;
+			color: #B40404;
+		}
+		.list {
+			margin-top: 12px;
+		}
+		.list>li {
+			margin: 5px 0;
+		}
+		.list>li>a {
+			text-decoration: none;
+			color: #000;
+		}
+		.first_post {
+			border-bottom: 1px solid #ddd;
+		}
+		.post_2 {
+			margin: 10px 0;
+			display: inline-block;
+    		border-bottom: 1px solid #ddd;
+    		padding-bottom: 10px;
+		}
+		.col_1 {
+			height: 337px;
+		}
+		.col_1, .col_2 {
+			width: 36%;
+			border-right: 1px solid #ddd;
+			padding-right: 6px;
+			float: left;
+		}
+		.col_2 {
+			padding: 0 6px;
+		}
+		.col_3 {
+			float: left;
+			width: 21%;
+			padding-left: 6px;
+		}
+		.col_1 img, .col_2 img {
+			width: 172px;
+			height: 110px;
+		}
+		.col_1 h2, .col_2 h2 {
+			font-size: 16px;
+			margin: 6px 0;
+		}
+		.col_3 h2 {
+			font-size: 15px;
+			margin: 0;
+		}
+		.col_1 p, .col_2 p {
+			margin: 0;
+			font-size: 12px;
+			text-align: justify;
+		}
+		.col_3 li {
+			border-bottom: 1px solid #ddd;
+			padding: 10px 0;
+		}
+		.col_3 li:first-child {
+			padding-top: 0;
+		}
+		.col_3 li:last-child {
+			border-bottom: none;
+		}
+		.col_3 .info:after {
+			display: none;
+		}
+		.col_1 a, .col_2 a {
+			color: #000;
+    		text-decoration: none;
+    		font-size: 12px;
+    		padding: 6px 0;
+    		display: block;
+		}
+		.post31, .post32 {
+			width: 48%;
+			float: left;
+		}
+		.post31 {
+			margin-right: 19px;
+		}
+		.post31 h3, .post32 h3 {
+			margin: 0;
+			font-size: 13px;
+		}
+		.post3 li {
+			padding: 10px 0;
+			border-bottom: 1px solid #ddd;
+		}
+		.post31 li:last-child, .post32 li:last-child {
+			border-bottom: none;
+		}
+		.post3 .info:after, .post4 .info:after {
+			display: none;
+		}
+		.sidebar .content {
+			background: #eee;
+		}
+		.sidebar1 img {
+			width: 220px;
+			height: 120px;
+		}
+		.post3 {
+			display: flex;
+		}
+		.post4 {
+			margin: 15px 0;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			display: inline-block;
+			padding-bottom: 25px;
+		}
+		.post41, .post42 {
+			width: 50%;
+			float: left;
+		}
+		.post41 li, .post42 li {
+			padding: 6px 8px;
+		}
+		.post41 li {
+			padding-left: 0;
+		}
+		.post42 li {
+			padding-right: 0;
+		}
+		.post4 img {
+			width: 130px;
+			height: 85px;
+		}
+		.post4 p{
+			font-size: 13px;
+			font-weight: bold;
+			margin: 0;
+		}
+		.image {
+			float: left;
+			padding-right: 6px;
+		}
+		.post5 {
+			padding-bottom: 25px;
+    		border-bottom: 1px solid #ddd;
+    		margin-bottom: 5px;
+		}
+		.post5 img {
+			width: 247px;
+			height: 190px;
+		}
+		.text2 {
+			float: left;
+			padding-right: 8px;
+			width: 225px;
+		}
+		.text2 h3 {
+			font-size: 17px;
+			margin: 0;
+		}
+		.text2 p {
+			font-size: 12px;
+		}
+		.more img {
+			width: 130px;
+			height: 80px;
+		}
+		.post5 h2, .more h2 {
+			font-size: 1.17em;
+		}
+		.image2 {
+			float: left;
+			padding-right: 10px;
+		}
+		.text3 {
+			float: right;
+			width: 339px;
+		}
+		.text3 h3 {
+			margin: 0;
+			font-size: 15px;
+		}
+		.text3 p {
+			margin: 7px 0;
+			font-size: 12px;
+		}
+		.more {
+			border-bottom: 1px solid #ddd;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			display: inline-block;
+		}
+		.sidebar h3 {
+			text-align: center;
+			padding-top: 10px;
+		}
+		.sidebar1 li {
+			padding: 45px;
+			padding-top: 0;
+		}
+		.sidebar1 span {
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.sidebar2 li {
+			padding: 10px;
+			font-size: 15px;
+			border-bottom: 1px solid #ddd;
+		}
+		.sidebar2 li:last-child {
+			border-bottom: none;
+		}
+		.sidebar2 li:after {
+			content: "1";
+			color: red;
+			font-weight: bold;
+			position: absolute;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<p>Zent group</p>
+			</div>
+		</div>
+		<div id="top">
+				<ul class="top_menu">
+					<li><a href="">Tin chính</a></li>
+					<li><a href="">Việt Nam</a></li>
+					<li><a href="">Thế giới</a></li>
+					<li><a href="">Diễn đàn</a></li>
+					<li><a href="">Kinh tế</a></li>
+					<li><a href="">Nhịp sống mới</a></li>
+					<li><a href="">Thể thao</a></li>
+					<li><a href="">Học tiếng Anh</a></li>
+					<li><a href="">Hình ảnh</a></li>
+					<li><a href="">Audio</a></li>
+					<li><a href="">Video</a></li>
+				</ul>
+		</div>	
+		<div id="ads">
+			<div class="qc">
+				<img src="http://imnct.com/wp-content/uploads/2012/03/728x90.jpg">
+			</div>
+		</div>
+		<div id="container">
+			<div class="main">
+				<div class="main_1">
+					<div class="first_post">
+						<h2>Nga nói khủng bố khiến phi cơ Nga bị đâm</h2>
+						<div class="text">
+							<div class="detail_1">
+								<p>Nga nói hành động khủng bố đã khiến chiếc phi cơ của Nga bị đâm ở Ai Cập hồi tháng 10 và giết hại hơn 224 người trên máy bay.</p>
+								<div class="info">
+									<span class="time">17 tháng 11 2015</span><span class="label">Thế giới</span>
+								</div>
+								<ul class="list">
+										<li><a href="">Phi cơ Nga: 'bom trong khoang hành lý'</a></li>
+										<li><a href="">Nga nói chưa kết luận về vụ rơi máy bay</a></li>
+										<li><a href="">Máy bay hàng không Nga 'rơi vì bom'?</a></li>
+									</ul>
+							</div>
+							<div class="thumbnail_1">
+								<img src="http://anh.24h.com.vn//upload/1-2016/images/2016-02-25/medium/1456362829-1456362204-thumbnail.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="post_2">
+						<div class="col_1">
+							<img src="https://images0.minutemediacdn.com/production/912x516/58ca9d71f1faa884d3000002.jpg">
+							<h2>Bóng đá: Tuyển Anh thắng Pháp 2-0</h2>
+							<p>Tuyển Anh thắng Pháp 2-0 trên sân Wembley nhờ công của Alli ở phút 39 và Rooney phút 47, trong trận cầu diễn ra chỉ vài ngày sau vụ khủng bố ở Paris.</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+							<a href="">Anh Pháp giao hữu: Trận thách thức khủng bố</a>
+						</div>
+						<div class="col_2">
+							<img src="https://images0.minutemediacdn.com/production/912x516/58ca9d71f1faa884d3000002.jpg">
+							<h2>Bóng đá: Tuyển Anh thắng Pháp 2-0</h2>
+							<p>Tuyển Anh thắng Pháp 2-0 trên sân Wembley nhờ công của Alli ở phút 39 và Rooney phút 47, trong trận cầu diễn ra chỉ vài ngày sau vụ khủng bố ở Paris.</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+							<a href="">Anh Pháp giao hữu: Trận thách thức khủng bố</a>
+							<a href="">Nhân sự và tư duy chính trị của Đảng</a>
+						</div>
+						<div class="col_3">
+							<li>
+								<h2>Charlie Sheen xác nhận nhiễm HIV</h2>
+								<div class="info">
+								<span class="time">17 tháng 11 2015</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h2>Charlie Sheen xác nhận nhiễm HIV</h2>
+								<div class="info">
+								<span class="time">17 tháng 11 2015</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h2>Charlie Sheen xác nhận nhiễm HIV</h2>
+								<div class="info">
+								<span class="time">17 tháng 11 2015</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="post3">
+						<div class="post31">
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+						</div>
+						<div class="post32">
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+							<li>
+								<h3>Tổng thống Pháp thề phá tan IS</h3>
+								<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="post4">
+						<h3>Nghe/Xem <i class="fa fa-chevron-right" style="color: red;"></i></h3>
+						<div class="post41">
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+						</div>
+						<div class="post42">
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="https://i.kinja-img.com/gawker-media/image/upload/s--bEJ0VSTg--/c_scale,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png">
+								</div>
+								<div class="text1">
+									<p>Đại biểu Nghĩa hỏi Thủ tướng khá khó</p>
+									<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+									</div>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="post5">
+						<h2>Điểm nhấn <i class="fa fa-chevron-right" style="color: red;"></i></h2>
+						<div class="text2">
+							<h3>IS là gì và nguy hiểm tới đâu?</h3>
+							<p>BBC tiếng Việt điểm lại các quan điểm Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, odio?</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+						</div>
+						<div class="image1">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+						</div>
+					</div>
+					<div class="more">
+						<h2>Quan điểm <i class="fa fa-chevron-right" style="color: red;"></i></h2>
+						<div class="image2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+						</div>
+						<div class="text3">
+							<h3>Nhiều người Hồi giáo "đã khóc" trước Batalan</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero impedit hic id inventore, illum!</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+						</div>
+					</div>
+					<div class="more">
+						<h2>Quan điểm <i class="fa fa-chevron-right" style="color: red;"></i></h2>
+						<div class="image2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+						</div>
+						<div class="text3">
+							<h3>Nhiều người Hồi giáo "đã khóc" trước Batalan</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero impedit hic id inventore, illum!</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+						</div>
+					</div>
+					<div class="more">
+						<h2>Quan điểm <i class="fa fa-chevron-right" style="color: red;"></i></h2>
+						<div class="image2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+						</div>
+						<div class="text3">
+							<h3>Nhiều người Hồi giáo "đã khóc" trước Batalan</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero impedit hic id inventore, illum!</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+						</div>
+					</div>
+					<div class="more">
+						<h2>Quan điểm <i class="fa fa-chevron-right" style="color: red;"></i></h2>
+						<div class="image2">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+						</div>
+						<div class="text3">
+							<h3>Nhiều người Hồi giáo "đã khóc" trước Batalan</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero impedit hic id inventore, illum!</p>
+							<div class="info">
+								<span class="time">5 giờ trước</span><span class="label">Thế giới</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar">
+				<div class="content sidebar1">
+					<h3>Góc nhìn chuyên mục</h3>
+					<ul>
+						<li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+							<span class="title">Bí ẩn những chuyến tàu ma ở Anh</span>
+						</li>
+						<li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+							<span class="title">Bí ẩn những chuyến tàu ma ở Anh</span>
+						</li>
+						<li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+							<span class="title">Bí ẩn những chuyến tàu ma ở Anh</span>
+						</li>
+						<li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+							<span class="title">Bí ẩn những chuyến tàu ma ở Anh</span>
+						</li>
+						<li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg/1200px-Nh%C3%A0_v%C3%A1ch_%C4%91%E1%BA%A5t.jpg">
+							<span class="title">Bí ẩn những chuyến tàu ma ở Anh</span>
+						</li>
+					</ul>
+				</div>
+				<div class="content sidebar2">
+					<h3>Đọc nhiều nhất</h3>
+					<li>Cựu cán bộ an ninh bị đi tù vì Facebook</li>
+					<li>Cựu cán bộ an ninh bị đi tù vì Facebook</li>
+					<li>Cựu cán bộ an ninh bị đi tù vì Facebook</li>
+					<li>Cựu cán bộ an ninh bị đi tù vì Facebook</li>
+					<li>Cựu cán bộ an ninh bị đi tù vì Facebook</li>
+				</div>
+				<div class="content sidebar3">
+					<h3>BBC Tiếng Việt trên mạng</h3>
+					<li>
+						<a href="">Facebook</a>
+					</li>
+					<li>
+						<a href="">Twitter</a>
+					</li>
+					<li>
+						<a href="">Youtube</a>
+					</li>
+					<li>
+						<a href="">Google+</a>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>	
+</body>
+</html>

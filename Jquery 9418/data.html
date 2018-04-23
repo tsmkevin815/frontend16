@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div data-name="Cuong" data-age="08" abc="Happy New Year!">
+		Click me!
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('div').click(function() {
+				var name = $(this).data('name');
+				var age = $(this).data('age');
+				var abc = $(this).attr('abc');
+				/*alert(abc);*/
+				alert(age);
+				/*alert(name);*/
+			})
+		})
+	</script>
+</body>
+</html>

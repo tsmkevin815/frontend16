@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		nav {
+			background: #7577a9;
+			height: 45px;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+		}
+		.menu>li {
+			position: relative;
+			float: left;
+			line-height: 45px;
+		}
+		.menu>li>a {
+			text-decoration: none;
+			color: #fff;
+			padding: 13px 10px;
+			font-size: 18px;
+		}
+		.menu>li:hover {
+			background: #2a2a2a;
+		}
+		.sub>li>a {
+			text-decoration: none;
+			color: #fff;
+			padding-left: 10px;
+		}
+		.sub {
+			display: none;
+			width: 150px;
+			position: absolute;
+			background: #2a2a2a;
+		}
+		/*.menu>li .sub:after {
+			content: "\f101";
+			font-family: fontawesome;
+			color: #fff;
+		}*/
+		.menu>li:hover .sub {
+			display: block;
+		}
+		.sub>li:hover {
+			background: #7577a9;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		.has-sub {
+			display: none;
+		}
+		.sub>li:hover .has-sub {
+			display: block;
+		}
+		.has-sub>li>a {
+			padding-left: 10px;
+			text-decoration: none;
+			color: #fff;
+		}
+		.sub>li {
+			position: relative;
+		}
+		.has-sub {
+			position: absolute;
+			width: 150px;
+			left: 150px;
+			top: 0px;
+			background: orange;
+		}
+		.has-sub>li:after {
+			content: "\f101";
+			font-family: fontawesome;
+			color: #fff;
+		}
+		.has-sub>li:hover {
+			background: #2a2a2a;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+			<li><a href=""><i class="fa fa-map-marker"></i> About</a></li>
+			<li>
+				<a href=""><i class="fa fa-graduation-cap"></i> Course</a>
+				<ul class="sub">
+					<li>
+						<a href="">PHP</a>
+						<ul class="has-sub">
+							<li><a href="">Base</a></li>
+							<li><a href="">Advanced</a></li>
+						</ul>
+					</li>
+					<li><a href="">Java</a></li>
+					<li><a href="">Front End</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href=""><i class="fa fa-phone"></i> Contact</a>
+				<ul class="sub">
+					<li><a href="">Admin</a></li>
+					<li><a href="">Moderator</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

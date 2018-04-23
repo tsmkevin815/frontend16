@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+	<script>
+		var chuoi = []
+		var n = prompt("nhap n :")
+		console.log("Hinh tam giac :")
+		for(var i = 1; i<=n; i++ ){
+			for(var j =0; j < i ; j++){
+				chuoi+=" * " 
+			}
+			chuoi+="\n"
+		}
+		console.log(chuoi)
+
+		var chuoi = []
+		console.log("Hinh tam giac ngc :")
+		for(var i =n; i>0; i-- ){
+			for(var j =0; j < i ; j++){
+				chuoi+=" * " 
+			}
+			chuoi+="\n"
+		}
+		console.log(chuoi)
+
+		var chuoi = []
+		var v = []
+		console.log("Hinh vuong :")
+		for(var i =1; i<= n; i++){
+			chuoi+=" * "
+		}
+		chuoi+="\n"
+		for(var i =1; i<= n; i++){
+			v+=chuoi
+		}
+		console.log(v)
+
+		console.log("Hinh vuong rong :")
+		var x = []
+		x+=" * "
+		var vr = []
+		for(var i =n-2 ; i >0; i--){
+			x+="   ";
+		}
+		x+=" * " + "\n"
+		vr += chuoi
+		for(var i =1; i<=n-2;i++){
+			vr+=x
+		}
+		vr+=chuoi
+		console.log(vr)
+	</script>
+</body>
+</html>

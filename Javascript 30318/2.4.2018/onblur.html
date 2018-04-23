@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" onblur="cuong(this)" value="Hello" onfocus="dat(this)">
+	<script type="text/javascript">
+		function cuong(x) {
+			x.value = x.value.toUpperCase();
+			x.style.borderColor="green";
+		}
+		function dat(x) {
+			x.style.Color="red";
+			x.style.fontWeight="bold";
+			x.style.fontStyle="italic";
+		}
+	</script>
+</body>
+</html>

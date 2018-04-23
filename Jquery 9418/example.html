@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.square {
+			height: 200px;
+			width: 200px;
+			background: #7577a9;
+			display: none;
+			position: relative;
+			margin-top: 10px;
+		}
+		.square>p {
+			position: absolute;
+			font-size: 16px;
+			color: #fff!important;
+			font-weight: bold;
+			top: 40%;
+			left: 40%;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+		Hello!	
+	</div>
+	<p class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eligendi.
+	</p>
+	<h2 class="h2">
+		Lorem ipsum dolor sit amet.
+	</h2>
+	<button id="click">Click</button>
+	<div class="square">
+		<p>Dog</p>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		/*$(function() {
+			alert('Hello World!');
+		});*/
+		$(function() {
+			$('#div') // get ID
+			/*$('.text').css('color', 'red') // get Class*/
+			$('p').css('color', 'red') // Selector + 1 CSS
+			$('p, .h2').css({'color': 'red', 'fontSize': '20px'}) //Multiples Selector, Class And ID + CSS
+			$(function() {
+				$('#click').click(function() {
+					$('.square').toggle();
+				})
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" onkeyup="test(this)">
+	<p id="noti"></p>
+	<script type="text/javascript">
+		function test(x) {
+			console.log(x.value);
+			if (x.value.length < 5) {
+				document.getElementById("noti").innerHTML = "Error!";
+			} else {
+				document.getElementById("noti").innerHTML = "";
+			}
+		}
+	</script>
+</body>
+</html>

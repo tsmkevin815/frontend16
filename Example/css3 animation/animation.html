@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position: relative;
+			background: orange;
+			animation-name: chuyendong;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes chuyendong {
+			0% {
+				top: 0px;
+				left: 0px;
+			}
+			14% {
+				top: 0px;
+				left: 600px;
+				background: red;
+			}
+			28% {
+				top: 600px;
+				left: 0px;
+				background: blue;
+			}
+			42% {
+				top: 0px;
+				left: 0px;
+				background: green;
+			}
+			56% {
+				top: 0px;
+				left: 600px;
+				display: none;
+			}
+			70% {
+				top: 600px;
+				right: 0px;
+				background: linear-gradient(blue,green);
+			}
+			84% {
+				top: 600px;
+				left: 0px;
+				background: violet;
+			}
+			98% {
+				top: 0px;
+				left: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+	<marquee behavior="" direction="up" loop="infinite" width="300px" height="300px">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, illo.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	</marquee>
+</body>
+</html>

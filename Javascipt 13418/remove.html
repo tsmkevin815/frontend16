@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="click">Add</button>
+	<div id="content">
+		
+	</div>
+	<script type="text/javascript" src="../Jquery 9418/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#click').click(function() {
+			$('#content').prepend('<div><button class="del">Xoa</button></div>');
+		})
+		$('#content').on('click','.del',function() {
+			$(this).parent().remove();
+		})
+	</script>
+</body>
+</html>

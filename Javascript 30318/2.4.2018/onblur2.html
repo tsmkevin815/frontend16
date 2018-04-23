@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" onblur="cuong(this)">
+	<p id="noti"></p>
+	<script type="text/javascript">
+		function cuong(x) {
+			if (x.value.lenght < 5) {
+				document.getElementById('noti').innerHTML = "Bạn nhập thiếu độ dài nhé!";
+			} else {
+				document.getElementById('noti').innerHTML = "";
+			}
+		}
+	</script>
+</body>
+</html>

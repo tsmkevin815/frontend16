@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus temporibus velit cupiditate, ipsam quidem quod!
+	</p>
+	<p class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus temporibus velit cupiditate, ipsam quidem quod!
+	</p>
+	<button onclick="clickme()">Click me</button>
+	<script type="text/javascript">
+		function clickme() {
+			var a=document.getElementsByClassName('text');
+			/*for(var i=0; i<a.length;i++) {
+				a[i].style.color="red";
+			}*/
+			a[0].style.color="green";
+			a[1].innnerHTML="OMG!";
+		}
+	</script>
+</body>
+</html>

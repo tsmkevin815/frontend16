@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<input type="text" name="text">
+		<select name="1" onchange="xxxx()" id="select">
+			<option value="1">Ha Noi</option>
+			<option value="2">Ho Chinh Minh</option>
+		</select>
+	</div>
+	<div id="content">
+		
+	</div>
+	<script type="text/javascript" src="../Jquery 9418/jquery.min.js"></script>
+	<script type="text/javascript">
+		function xxxx() {
+			var select = $('select').val();
+			$('content').append('<p>' + select + '</p>')
+		}
+	</script>
+</body>
+</html>

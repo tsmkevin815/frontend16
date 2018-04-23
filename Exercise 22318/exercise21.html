@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			font-family: Arial;
+		}
+		nav {
+			background: #78b43d;
+			height: 45px;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+		}
+		.menu>li {
+			position: relative;
+			float: left;
+			line-height: 45px;
+		}
+		.menu>li>a {
+			text-decoration: none;
+			color: #fff;
+			padding: 13px 10px;
+			font-size: 15px;
+		}
+		.menu>li:hover {
+			background: transparent;
+		}
+		.sub>li>a {
+			text-decoration: none;
+			color: #2a2a2a;
+			padding-left: 10px;
+			font-size: 14px;
+		}
+		.sub>li>a:before {
+			content: "\f101";
+			font-family: fontawesome;
+			padding-right: 5px;
+			color: #fff;
+		}
+		.sub {
+			display: none;
+			width: 250px;
+			position: absolute;
+			background: #aad862;
+		}
+		.menu>li:hover .sub {
+			display: block;
+		}
+		.has-sub {
+			display: none;
+		}
+		.sub>li:hover .has-sub {
+			display: block;
+		}
+		.has-sub>li>a {
+			padding-left: 10px;
+			text-decoration: none;
+			color: #fff;
+		}
+		.sub>li {
+			position: relative;
+			border-bottom: 1px solid #78b43d;
+			line-height: 30px;
+		}
+		.sub>li:hover {
+			background: #78b43d;
+		}
+		.sub>li:hover a {
+			color: #fff;
+		}
+		.sub>li:last-child {
+			border-bottom: none;
+		}
+		.has-sub {
+			position: absolute;
+			width: 150px;
+			left: 150px;
+			top: 0px;
+			background: orange;
+		}
+		.has-sub>li:after {
+			content: "\f101";
+			font-family: fontawesome;
+			color: #fff;
+		}
+		.has-sub>li:hover {
+			background: #2a2a2a;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		.border_right {
+			border-right: 1px solid rgba(255,255,255,0.4);
+		}
+		.border_right2 {
+			border-right: 1px solid #fff;
+			padding: 0 10px!important;
+		}
+		li.search_icon {
+			float: right;
+			margin-right: 10px;
+		}
+		.search_icon i {
+			color: #fff; 
+			border: 1px solid rgba(255,255,255,0.4); 
+			border-radius: 50%; 
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li class="border_right" style="line-height: 18px;"><a href=""><img src="https://i.imgur.com/Ix7ng82.png" style="padding-top: 4px;"></a></li>
+			<li class="border_right"><a href=""><i class="fa fa-bars"></i> Xem danh mục</a></li>
+			<li><a class="border_right2" href="">Tin tức quốc tế</a></li>
+			<li>
+				<a class="border_right2" href="">Hi-tech</a>
+				<ul class="sub">
+					<li><a href="">Dế sắp ra lò</a></li>
+					<li><a href="">Tin tức công nghệ</a></li>
+					<li><a href="">Mỹ nữ và công nghệ</a></li>
+					<li><a href="">Laptop giá rẻ</a></li>
+					<li><a href="">Dế giá rẻ</a></li>
+					<li><a href="">Điện thoại</a></li>
+					<li><a href="">Máy tính xách tay</a></li>
+					<li><a href="">Máy nghe nhạc</a></li>
+					<li><a href="">Máy ảnh và camera số</a></li>
+					<li><a href="">Các sản phẩm khác</a></li>
+					<li><a href="">Thế giới công nghệ</a></li>
+					<li><a href="">Máy tính bảng</a></li>
+					<li><a href="">Đánh giá sản phẩm</a></li>
+					<li><a href="">Điện tử gia dụng</a></li>
+				</ul>
+			</li>
+			<li><a class="border_right2" href="">Showbiz</a></li>
+			<li><a class="border_right2" href="">Giải trí</a></li>
+			<li><a class="border_right2" href="">Sống trẻ</a></li>
+			<li><a class="border_right2" href="">Thể thao</a></li>
+			<li><a class="border_right2" href="">Sức khỏe</a></li>
+			<li><a class="border_right2" href="">Video</a></li>
+			<li><a class="border_right2" href="">Phái đẹp</a></li>
+			<li><a href="">Game</a></li>
+			<li class="search_icon"><i class="fa fa-search"></i></li>	
+		</ul>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="post" onsubmit="test()">
+		<input type="text" id="name">
+		<input type="text" id="address">
+		<input type="reset" name="reset" value="Reset">
+		<button type="submit">Submit</button>
+	</form>
+	<script type="text/javascript">
+		function test() {
+			var a = document.getElementById('name').value;
+			var b = document.getElementById('address').value;
+			alert(a+b);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Value And Reset Input</title>
+</head>
+<body>
+	<input type="text" id="input">
+	<button onclick="clickme()">Add</button>
+	<div id="content">
+		
+	</div>
+	<script type="text/javascript">
+		function clickme() {
+			var a = document.getElementById('input');
+			document.getElementById('content').innerHTML=a.value;			
+			a.value='';
+		}
+	</script>
+</body>
+</html>

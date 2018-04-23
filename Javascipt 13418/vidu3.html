@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zent Group</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	
+	<input type="text" id="input">
+	<button id="add">Add</button>	
+	<button id="update" style="display: none;">Update</button>	
+	<button id="checkall">CheckAll</button>	
+	<button id="uncheckall">UnCheckAll</button>	
+	<button id="del">DeleleAll</button>	
+
+	<div id="content">
+
+	</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+
+		var hiep = 1;
+
+		var hiep_copy = 1;
+
+
+		$(function() {
+
+			$('#add').click(function(e) {
+
+				var input = $('#input').val();
+
+				var text = '<div id="'+ hiep +'"> <input type="checkbox"> '+ input + ' <button class="edit" content='+ input +'>Edit</button><button class="del">Del</button> </div>'; 
+				$('#content').prepend(text);
+				$('#input').val('');
+				hiep ++;
+			});
+			
+
+			$('body').on('click', '#checkall', function() {
+				
+				$( "input[type='checkbox']").each(function( index ) {
+					  $( this ).prop('checked', true);
+				});
+
+			});
+			
+			// delete checked
+			$('body').on('click', '#del', function() {
+
+				$( "input[type='checkbox']").each(function( index, value ) {
+
+					  if($( this ).is(':checked')) {
+
+					  	$( this ).parent().remove();
+
+					  }
+				});
+			});
+
+			$('body').on('click', '.edit', function() {
+
+				var content = $(this).attr('content');
+				$('#input').val(content);
+
+				hiep_copy = $(this).parent().attr('id');
+				
+				$('#update').attr('hiep_copy', hiep_copy);
+
+				$('#update').show();
+				$('#add').hide();
+				
+
+
+			});
+
+			$('body').on('click', '#update', function() {
+	
+				var input = $('#input').val();
+
+				
+				var text = '<div id="'+ hiep_copy +'"> <input type="checkbox"> '+ input + ' <button class="edit" content='+ input +'>Edit</button><button class="del">Del</button> </div>'; 
+
+				$('#' + hiep_copy).html(text);
+
+				$('#input').val('');
+
+				$('#update').hide();
+				$('#add').show();
+
+			})
+
+
+		})
+		
+
+	</script>
+
+</body>
+</html>

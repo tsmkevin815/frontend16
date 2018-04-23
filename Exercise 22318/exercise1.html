@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			background-image: url(https://i.imgur.com/wGCsZsn.jpg);
+			font-family: 'Roboto';
+			background-size: cover;
+		}
+		li {
+			list-style-type: none;
+		}
+		ul {
+			padding: 0;
+		}
+		#wrapper {
+			width: 850px;
+			height: auto;
+			background: transparent;
+			margin-left: 25px;
+		}
+		#header {
+			height: auto;
+			background: transparent;
+		}
+		.logo {
+			float: left;
+			width: 40%;
+			line-height: 0;
+		}
+		.logo p {
+			font-size: 28px;
+			color: #de3f00;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.topmenu {
+			float: right;
+			width: 60%;
+		}
+		nav {
+			float: right;
+		}
+		.topnav>li {
+			list-style-type: none;
+			display: inline-block;
+		}
+		.topnav>li>a {
+			padding: 5px 15px;
+			font-size: 18px;
+			text-decoration: none;
+			color: #000;
+		}
+		.topnav>li>a:hover {
+			background: #fff;
+    		border-radius: 8px;
+    		box-shadow: 1px 1px darkgrey;
+    		transition: all 0.3s;
+    		-webkit-transition: all 0.3s;
+		}
+		.button {
+			background: #fff;
+    		border-radius: 8px;
+    		box-shadow: 1px 1px darkgrey;
+		}
+		#container {
+			margin-top: 30px;
+		}
+		.sidebar {
+			width: 15%;
+			float: left;
+		}
+		.main {
+			width: 80%;
+			float: right;
+			margin-top: 20px;
+		}
+		.sidebar li a {
+			text-decoration: none;
+			color: #000;
+			display: block;
+			padding: 6px 0;
+			font-size: 17px;
+		}
+		.sidebar li a:hover {
+			color: #de3f00;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s; 
+			padding-left: 10px;
+		}
+		.main li {
+			width: 30%;
+			display: inline-block;
+			margin-bottom: 13px;
+		}
+		.img_custom {
+			background: #f9f8f8;
+    		height: 240px;
+    		width: 180px;
+    		border-radius: 10px;
+    		position: relative;
+		}
+		.img_custom:before {
+			content: "\f06e";
+			position: absolute;
+			z-index: 1;
+			visibility: hidden;
+			opacity: 0;
+			top: 45%;
+			left: 40%;
+			color: #fff;
+			font-size: 30px;
+			font-family: fontawesome;
+		}
+		.img_custom:hover:before {
+			visibility: visible;
+			opacity: 0.8;
+			transition: all 0.4s;
+			-webkit-transition: all 0.4s;
+		}
+		.img_custom:hover {
+			transform: scale(1.035);
+			transition: all 0.4s;
+			-webkit-transition: all 0.4s;
+			cursor: pointer;
+		}
+		.img_custom img {
+			width: 180px;
+			height: 200px;
+			border-radius: 10px;
+			padding-top: 12px;
+		}
+		.img_custom p {
+			margin: 0;
+    		font-weight: 500;
+    		padding: 5px;
+    		text-align: center;
+		}
+		.img_custom span {
+			background: rgba(0,0,0,.5);
+    		position: absolute;
+    		bottom: -24px;
+    		opacity: 0;
+    		width: -webkit-fill-available;
+    		color: #fff;
+    		font-size: 11px;
+    		padding: 5px;
+    		border-radius: 0 0 10px 10px;
+    		transition: all 0.4s;
+    		-webkit-transition: all 0.4s;
+    		text-align: justify;
+		}
+		.img_custom:hover span {
+			bottom: -1px;
+			opacity: 1;
+		}
+		#footer {
+			background: transparent;
+			height: 40px;
+		}
+		.copyright {
+			float: left;
+		}
+		.info {
+			float: right;
+		}
+		.info ul {
+			margin: 0;
+		}
+		.info li {
+			display: inline-block;
+		}
+		.info li a {
+			padding-right: 10px;
+			color: blue;
+			text-decoration: underline;
+		}
+		.info li a:hover {
+			color: #fff;
+			transition: all 0.4s;
+			-webkit-transition: all 0.4s;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<p>Zent Group</p>
+			</div>
+			<div class="topmenu">
+				<nav>
+					<ul class="topnav">
+						<li><a href="">About</a></li>
+						<li><a href="">Sign Up</a></li>
+						<li><a class="button" href="">Sign In</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div id="container">
+			<div class="sidebar">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Tab Gallery</a></li>
+					<li><a href="">Create Tab</a></li>
+					<li><a href="">Favorites</a></li>
+					<li><a href="">Tech News</a></li>
+					<li><a href="">Travel</a></li>
+					<li><a href="">Photography</a></li>
+					<li><a href="">Finance World</a></li>
+					<li><a href="">Movies</a></li>
+					<li><a href="">Cooking</a></li>
+					<li><a href="">Fashion</a></li>
+				</ul>
+			</div>
+			<div class="main">
+				<ul>
+					<li>
+						<div class="img_custom">
+							<p>Tech News</p>
+							<img src="https://i.imgur.com/ykEvNZm.jpg">
+							<span>ZentPhone by Zent Group</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Travel</p>
+							<img src="https://i.imgur.com/c5jc9Jh.jpg">
+							<span>Do your best - The rest will come</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Photography</p>
+							<img src="https://i.imgur.com/EZaYa2g.jpg">
+							<span>Take a shot - A Pulitzer prize is waiting for you</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Finance World</p>
+							<img src="https://i.imgur.com/at8vQKq.jpg">
+							<span>Gold? Please don't chase it. What about dollar? Keep calm!</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Movies</p>
+							<img src="https://i.imgur.com/iYN2coi.jpg">
+							<span>Batman the rising is released in October</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Cooking</p>
+							<img src="https://i.imgur.com/9s8LDyg.jpg">
+							<span>How to cook Spagbetti? Just click and taste!</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_custom">
+							<p>Fashion</p>
+							<img src="https://i.imgur.com/T4odhkt.jpg">
+							<span>London fashion week with collection of Zent Group and YellowSipMan.</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div id="footer">
+			<div class="copyright">
+				Copyright &#169; 2015 Zent Group.
+			</div>
+			<div class="info">
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Mac App</a></li>
+					<li><a href="">iPad App</a></li>
+					<li><a href="">Term Of Use</a></li>
+					<li><a href="">Private Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
